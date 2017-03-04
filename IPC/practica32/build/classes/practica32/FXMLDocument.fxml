@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="practica32.FXMLDocumentController">
+   <children>
+      <Slider fx:id="valorDato" max="2.0" onDragDone="#valor" showTickLabels="true" showTickMarks="true" />
+      <HBox spacing="10.0">
+         <children>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Conversion Rate" />
+            <Label fx:id="conversionRate" text="0" />
+         </children>
+      </HBox>
+      <HBox spacing="50.0">
+         <children>
+            <Label text="Input" />
+            <TextField fx:id="textoInput" />
+         </children>
+         <VBox.margin>
+            <Insets right="30.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox spacing="40.0">
+         <children>
+            <Label text="Output" />
+            <TextField fx:id="textoOutput" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#convert" text="Convert" />
+            <Button mnemonicParsing="false" onAction="#clear" text="Clear" />
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <CheckBox fx:id="convertirAutomaticamente" mnemonicParsing="false" onAction="#conversionAutomatica" text="Automatic conversion">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </CheckBox>
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</VBox>
