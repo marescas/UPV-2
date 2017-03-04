@@ -7,4 +7,8 @@ Prácticas en el repositorio:
   * P1
 * EDA
   * P1
+* IPC (Ejercicios desordenados, mirar guión de la práctica)
+  * P1
+  * P2
+  * P3
   
