@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=nomFile
+comment0.target=GUIRecomendacion(java.lang.String)
+comment1.params=evt
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment10.params=
+comment10.target=void\ run()
+comment2.params=evt
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=evt
+comment3.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment4.params=evt
+comment4.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment5.params=evt
+comment5.target=void\ anyadir(java.awt.event.ActionEvent)
+comment6.params=evt
+comment6.target=void\ top(java.awt.event.ActionEvent)
+comment7.params=evt
+comment7.target=void\ topK(java.awt.event.ActionEvent)
+comment8.params=evt
+comment8.target=void\ listarPags(java.awt.event.ActionEvent)
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=11

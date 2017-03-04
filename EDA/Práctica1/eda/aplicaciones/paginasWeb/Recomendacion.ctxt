@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Recomendacion()
+comment0.text=\n\ Construye\ el\ sistema\ de\ recomendaci\u00F3n\ sin\ ninguna\ p\u00E1gina\ analizada\ hasta\ el\ momento\n
+comment1.params=nomFile
+comment1.target=Recomendacion(java.lang.String)
+comment1.text=\n\ Construye\ el\ sistema\ de\ recomendaci\u00F3n\ a\ partir\ del\ an\u00E1lisis\ de\ las\ \n\ p\u00E1ginas\ cuyas\ url\ se\ encuentran\ en\ el\ fichero\ de\ texto\ nomFile\n\ @param\ nomFile,\ nombre\ del\ fichero\ que\ contiene\ las\ urls\n\ Si\ se\ produce\ alg\u00FAn\ problema\ en\ la\ lectura\ del\ fichero\ devuelve\ el\ sistema\ vacio\n
+comment2.params=nomPagina
+comment2.target=ReferenciasWeb\ anyadirPagina(java.lang.String)
+comment2.text=\n\ Analiza\ la\ p\u00E1gina\ nomPagina\ y\ la\ incorpora\ al\ sistema\ de\ recomendaci\u00F3n\n\ \n\ @param\ \ nomPagina,\ la\ p\u00E1gina\ a\ a\u00F1adir\n\ @return\ el\ resultado\ del\ an\u00E1lisis\ de\ la\ p\u00E1gina\ o\ null\ si\ no\ se\ ha\ podido\ analizar\ \n
+comment3.params=
+comment3.target=ReferenciasWeb\ maxReferencias()
+comment3.text=\n\ Devuelve\ la\ p\u00E1gina\ recomendada\ atendiendo\ al\ criterio\n\ La\ elimina\ del\ sistema\ para\ no\ volver\ a\ recomendarla.\n\ Precondici\u00F3n\:\ el\ sistema\ debe\ contener\ al\ menos\ una\ p\u00E1gina\ para\ recomendar\n\ @return\ la\ p\u00E1gina\ recomendada\n
+comment4.params=k
+comment4.target=ReferenciasWeb[]\ maxKReferencias(int)
+comment4.text=\n\ Devuelve\ un\ array\ con\ las\ k\ p\u00E1ginas\ recomendadas\ atendiendo\ al\ criterio\n\ Las\ elimina\ del\ sistema\ para\ no\ volver\ a\ recomendarlas.\n\ Si\ el\ sistema\ no\ tiene\ k\ p\u00E1ginas\ devuelve\ todas\ las\ que\ tiene.\n\ Precondici\u00F3n\:\ el\ sistema\ debe\ contener\ al\ menos\ una\ p\u00E1gina\ para\ recomendar\n\ @return\ el\ array\ de\ p\u00E1ginas\ recomendadas\ de\ tama\u00F1o\ minimo(k,\ noPags)\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\ Devuelve\ la\ representaci\u00F3n\ textual\ de\ la\ informaci\u00F3n\ \n\ que\ contiene\ el\ sistema\ de\ recomendaci\u00F3n\n
+numComments=6

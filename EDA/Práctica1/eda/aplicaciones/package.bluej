@@ -1,0 +1,23 @@
+#BlueJ package file
+objectbench.height=100
+objectbench.width=375
+package.editor.height=400
+package.editor.width=572
+package.editor.x=20
+package.editor.y=43
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+target1.height=62
+target1.name=pruebasOrdenacion
+target1.type=PackageTarget
+target1.width=150
+target1.x=10
+target1.y=90
+target2.height=62
+target2.name=paginasWeb
+target2.type=PackageTarget
+target2.width=100
+target2.x=160
+target2.y=10

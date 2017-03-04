@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=PriorityQColaPrioridad()
+comment0.text=crea\ una\ Cola\ de\ Prioridad\ (CP)\ vacia
+comment1.params=e
+comment1.target=void\ insertar(java.lang.Comparable)
+comment1.text=\ atendiendo\ a\ su\ prioridad,\ inserta\ el\ Elemento\ e\ en\ una\ Cola\ \n\ de\ Prioridad\ (CP)\n\ \ @param\ e\ Elemento\ a\ agnadir\ a\ una\ Cola\ de\ Prioridad\n
+comment2.params=
+comment2.target=java.lang.Comparable\ recuperarMin()
+comment2.text=\ SII\ \!esVacia()\:\ obtiene\ el\ Elemento\ con\ maxima\ prioridad\ de\ una\ CP\ \n\ @return\ E\ Elemento\ con\ maxima\ prioridad\ de\ una\ CP\n
+comment3.params=
+comment3.target=java.lang.Comparable\ eliminarMin()
+comment3.text=\ SII\ \!esVacia()\:\ obtiene\ y\ elimina\ el\ Elemento\ con\ maxima\ \n\ prioridad\ de\ una\ CP\ \n\ \ @return\ E\ Elemento\ con\ maxima\ prioridad\ de\ una\ CP\n
+comment4.params=
+comment4.target=boolean\ esVacia()
+comment4.text=\ comprueba\ si\ una\ Cola\ de\ Prioridad\ esta\ vacia\n\ @return\ true\ si\ una\ CP\ esta\ vacia\ y\ false\ en\ caso\ contrario\n
+numComments=5

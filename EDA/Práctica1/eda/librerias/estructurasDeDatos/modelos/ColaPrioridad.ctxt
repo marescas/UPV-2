@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=e
+comment0.target=void\ insertar(java.lang.Comparable)
+comment0.text=\ atendiendo\ a\ su\ prioridad,\ inserta\ el\ Elemento\ e\ \nen\ una\ Cola\ de\ Prioridad\ *
+comment1.params=
+comment1.target=java.lang.Comparable\ eliminarMin()
+comment1.text=\ SII\ \!esVacia()\:\ obtiene\ y\ elimina\ el\ Elemento\ con\ \nmaxima\ prioridad\ de\ una\ CP\ *
+comment2.params=
+comment2.target=java.lang.Comparable\ recuperarMin()
+comment2.text=SII\ \!esVacia()\:\ obtiene\ el\ Elemento\ con\ maxima\ prioridad\ de\ una\ CP\ *
+comment3.params=
+comment3.target=boolean\ esVacia()
+comment3.text=comprueba\ si\ una\ CP\ esta\ vacia\ *
+numComments=4

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=e\ s
+comment0.target=NodoLEG(java.lang.Object,\ NodoLEG)
+comment0.text=\ Crea\ un\ Nodo\ que\ contiene\ al\ Elemento\ e\ y\ al\ que\ sigue\ el\ Nodo\ s\ \n\ \ @param\ e\ Elemento\ que\ contiene\ un\ Nodo\n\ \ @param\ s\ Nodo\ siguiente\ a\ un\ Nodo\n
+comment1.params=dato
+comment1.target=NodoLEG(java.lang.Object)
+comment1.text=\ Crea\ un\ Nodo\ que\ contiene\ al\ Elemento\ e\ y\ al\ que\ no\ sigue\ ninguno\n\ \ @param\ e\ Elemento\ que\ contiene\ un\ Nodo\n
+numComments=2

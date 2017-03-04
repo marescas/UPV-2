@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=ki\ cap
+comment0.target=void\ init(int,\ int)
+comment1.params=
+comment1.target=void\ kidSwims()
+comment2.params=
+comment2.target=void\ kidRests()
+comment3.params=
+comment3.target=void\ instructorSwims()
+comment4.params=
+comment4.target=void\ instructorRests()
+comment5.params=l
+comment5.target=void\ setLog(Log)
+comment6.params=
+comment6.target=void\ begin()
+comment7.params=
+comment7.target=void\ end()
+numComments=8
