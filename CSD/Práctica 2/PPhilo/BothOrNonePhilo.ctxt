@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=id\ cycles\ delay\ table
+comment0.target=BothOrNonePhilo(int,\ int,\ int,\ Table)
+comment1.params=
+comment1.target=void\ run()
+numComments=2
