@@ -21,7 +21,7 @@ public class TablaHash<C, V> implements Map<C, V> {
     // elArray[h] es la cubeta (lista de colisiones) asociada al indice hash h
     // elArray[h] contiene la referencia a la Lista Con PI donde se encuentran  
     //   todas las entradas cuya clave tiene un indice hash h 
-    protected ListaConPI<EntradaHash<C, V>>[] elArray;
+    protected ListaConPI<EntradaHash<C, V>> elArray[];
     
     // TIENE UNA talla que representa el numero de entradas almacenadas.
     protected int talla; 
@@ -134,46 +134,70 @@ public class TablaHash<C, V> implements Map<C, V> {
         }
         return antiguoValor;
     }
-	/** Comprueba si una Tabla Hash esta vacia, i.e. si tiene 0 entradas. */
+    /** Comprueba si una Tabla Hash esta vacia, i.e. si tiene 0 entradas. */
     public boolean esVacio() { return talla == 0; }
     
     /** Devuelve la talla, o numero de entradas, de una Tabla Hash. */
     public int talla() { return talla; } 
-    	
-	/** Devuelve el factor de carga actual de una Tabla Hash, i.e. la longitud
+        
+    /** Devuelve el factor de carga actual de una Tabla Hash, i.e. la longitud
      *  media de sus cubetas */
     public final double factorCarga() {
         //COMPLETAR
-		return 0.0;
-		
+        return ((double) talla)/elArray.length;
+        
     }
-	
+    
     // rehashing: crea una nueva tabla con un array de talla aprox.
     // el doble y reubica las entradas
     @SuppressWarnings("unchecked")
     protected final void rehashing() {
         //COMPLETAR
-		
-		
+        ListaConPI<EntradaHash<C, V>>[] aux = elArray;
+        //tamaño es el siguiente primo doble del tamaño array.
+        elArray = new LEGListaConPI[siguientePrimo(2*elArray.length )];
+         for (int i = 0; i < elArray.length; i++) elArray[i] = new LEGListaConPI<EntradaHash<C, V>>();
+         for(int i = 0; i<aux.length;i++){
+           ListaConPI<EntradaHash<C, V>> l = aux[i];
+            l.inicio();
+            while(!l.esFin()){
+               EntradaHash<C, V> elem = l.recuperar();
+               elArray[indiceHash(elem.clave)].insertar(elem);
+               l.siguiente();
+            }
+         }
     } 
 
     /** Devuelve una ListaConPI con las talla() claves de una Tabla Hash */
     public ListaConPI<C> claves() {
         //COMPLETAR
-		return null;
-		
+        ListaConPI<C> p = new LEGListaConPI<C>();
+        for(int i = 0; i< elArray.length; i++){
+            ListaConPI<EntradaHash<C, V>> l = elArray[i];
+            l.inicio();
+            while(!l.esFin()){
+                p.insertar(l.recuperar().clave);
+                l.siguiente();
+            }
+        }
+        
+        return p;
     }
    
     /** Calcula la desviacion tipica de las longitudes de las listas */
     public final double desviacionTipica() {
-        //COMPLETAR
-		return 0.0;
-		
+        double media = factorCarga();
+        double devuelvo = 0;
+        for(int i = 0; i< elArray.length; i++){
+            devuelvo += Math.pow((elArray[i].talla() - media),2);
+        }
+        return Math.sqrt(devuelvo / elArray.length);
+        
     }
 
     /** Devuelve un String que representa el histograma de ocupacion:
       * lineas, cada una de ellas con dos valores: 
-      * longitudCubeta	NumeroDeCubetas 
+      * longitudCubeta  NumeroDeCubetas 
       * donde:
       * - las lineas 0 a 8 contienen el numero de cubetas de esa longitud, 
       *   0<=longitud<9
@@ -181,7 +205,16 @@ public class TablaHash<C, V> implements Map<C, V> {
       */      
     public String histograma() {
         //COMPLETAR
-        return "";
-		
+        int[] contadores = new int[10];
+        String s = "";
+        for(int i = 0; i<contadores.length;i++) contadores[i]= 0;
+        for(int i = 0; i<elArray.length;i++){
+            int num = elArray[i].talla();
+            if(num > 9) num = 9;
+            contadores[num]++;
+           
+        }
+        for(int i = 0; i<contadores.length; i++) s+= i+"\t"+contadores[i]+"\n";
+        return s;
     }
 }

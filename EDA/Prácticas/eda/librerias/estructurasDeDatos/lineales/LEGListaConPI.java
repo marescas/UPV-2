@@ -65,9 +65,7 @@ public class LEGListaConPI<E> implements ListaConPI<E> {
         // OJO: al eliminar el ultimo Elemento ... actualizar ult!; 
         // el PI esta en fin()
         /*COMPLETAR*/
-        
-        
-        
+       
         ant.siguiente = ant.siguiente.siguiente;
         
        

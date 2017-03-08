@@ -14,7 +14,7 @@ comment12.target=double\ desviacionTipica()
 comment12.text=Calcula\ la\ desviacion\ tipica\ de\ las\ longitudes\ de\ las\ listas
 comment13.params=
 comment13.target=java.lang.String\ histograma()
-comment13.text=\ Devuelve\ un\ String\ que\ representa\ el\ histograma\ de\ ocupacion\:\n\ lineas,\ cada\ una\ de\ ellas\ con\ dos\ valores\:\ \n\ longitudCubeta\tNumeroDeCubetas\ \n\ donde\:\n\ -\ las\ lineas\ 0\ a\ 8\ contienen\ el\ numero\ de\ cubetas\ de\ esa\ longitud,\ \n\ \ \ 0<\=longitud<9\n\ la\ ultima\ linea\ (9)\ contiene\ el\ numero\ de\ cubetas\ de\ longitud\ 9\ o\ mas\n
+comment13.text=\ Devuelve\ un\ String\ que\ representa\ el\ histograma\ de\ ocupacion\:\n\ lineas,\ cada\ una\ de\ ellas\ con\ dos\ valores\:\ \n\ longitudCubeta\ \ NumeroDeCubetas\ \n\ donde\:\n\ -\ las\ lineas\ 0\ a\ 8\ contienen\ el\ numero\ de\ cubetas\ de\ esa\ longitud,\ \n\ \ \ 0<\=longitud<9\n\ la\ ultima\ linea\ (9)\ contiene\ el\ numero\ de\ cubetas\ de\ longitud\ 9\ o\ mas\n
 comment2.params=n
 comment2.target=boolean\ esPrimo(int)
 comment3.params=c
