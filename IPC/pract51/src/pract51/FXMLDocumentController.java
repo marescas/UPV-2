@@ -78,11 +78,13 @@ public class FXMLDocumentController implements Initializable {
             alert.setHeaderText("Compra correcta");
             alert.setContentText("Compra realizada con éxito");
             Optional<ButtonType> result = alert.showAndWait();
-            if (result.isPresent() && result.get() == ButtonType.OK){
-                    
-            }
+            
         }else{
-        
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText("ERROR, selecciona el correcto.");
+            alert.setContentText("Error, selecciona el campo correcto.");
+           alert.showAndWait();
         }
     }
 

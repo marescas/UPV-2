@@ -41,25 +41,25 @@ public class Indexador {
      *  @throws  FileNotFoundException si no se encuentra algun fichero 
      */ 
     public Indexador(String listaLibros, String dir, int numCub) throws FileNotFoundException {
-	if (numCub == -1) { numCub=NUM_CUBETAS; }
+    if (numCub == -1) { numCub=NUM_CUBETAS; }
 
-	boolean res = true;
-	long t_total=0;
-        indicesBiblioteca = new TablaHash<String, ListaConPI<Indice>>(numCub);	    
-	Scanner fich = new Scanner(new File(listaLibros));
-	System.out.println("Cargando libros...");
-	while (fich.hasNext()) {
-	    String nombreLibro = fich.next();
-	    long t1 = System.nanoTime();
-	    if (!cargarLibro(nombreLibro, dir))
-		res = false;
-	    t_total += System.nanoTime() - t1;
-	}
-	tmp_carrega = t_total / 1000000.0;
+    boolean res = true;
+    long t_total=0;
+        indicesBiblioteca = new TablaHash<String, ListaConPI<Indice>>(numCub);      
+    Scanner fich = new Scanner(new File(listaLibros));
+    System.out.println("Cargando libros...");
+    while (fich.hasNext()) {
+        String nombreLibro = fich.next();
+        long t1 = System.nanoTime();
+        if (!cargarLibro(nombreLibro, dir))
+        res = false;
+        t_total += System.nanoTime() - t1;
+    }
+    tmp_carrega = t_total / 1000000.0;
 
-	if (!res) {
-	    throw new FileNotFoundException();
-	}
+    if (!res) {
+        throw new FileNotFoundException();
+    }
     }
     
     /** Actualiza el Indexador con los datos del documento nombreLibro que
@@ -69,7 +69,7 @@ public class Indexador {
      *  @return  boolean, true si el libro se ha leido con exito y falso en caso contrario
      */ 
     private boolean cargarLibro(String nombreLibro, String dir)  {
-	boolean res = true;
+    boolean res = true;
         try {
             Scanner libro = new Scanner(new File(dir + java.io.File.separator + nombreLibro));
             System.out.println("Cargando ..." + nombreLibro);
@@ -93,10 +93,10 @@ public class Indexador {
                 }
             }
         } catch (FileNotFoundException e) {
-	    System.err.println("Error "+dir+"/"+nombreLibro+ " no se encuentra");
-	    res = false;	    
+        System.err.println("Error "+dir+"/"+nombreLibro+ " no se encuentra");
+        res = false;        
         }
-	return res;
+    return res;
     }
     
     
@@ -108,14 +108,22 @@ public class Indexador {
      */
     public ListaConPI<String> buscarPalabra(String pal) {
         // COMPLETAR
-        ListaConPI<String> lista = new LEGListaConPI<String>();  
-
+        ListaConPI<String> lista = new LEGListaConPI<String>();
+        lista.inicio();
+        String aux = pal.toLowerCase();
         // Para la palabra "pal" pasada a minusculas, recuperar de 
         // la tabla la ListaConPI con sus indices.
-
+        ListaConPI<Indice> listilla = indicesBiblioteca.recuperar(aux);
+        
         // Tener en cuenta que si la palabra no existe la tabla nos 
         // devuelve null.
-        
+        if(listilla != null){
+           listilla.inicio();
+           while(!listilla.esFin()){
+            lista.insertar(listilla.recuperar().toString());
+            listilla.siguiente();
+            }
+        }
         // Recorrer la lista de indices recuperando los indices.
         // Convertir cada indice en un String usando su toString()
         // e insertarlos en la lista a devolver
@@ -176,8 +184,8 @@ public class Indexador {
         gd.drawString(4, 92, Color.BLACK, String.format("Talla       %d", th.talla()), f1);
         gd.drawString(4, 89, Color.BLACK, String.format("Fact. carga %5.3f", th.factorCarga()), f1);
         gd.drawString(4, 86, Color.BLACK, String.format("Desv. tip.  %5.3f", th.desviacionTipica()), f1);
-	gd.drawString(4, 83, Color.BLACK, String.format("Tmp. carga  %5.1fs", tmp_carrega/1000), f1);
-	
+    gd.drawString(4, 83, Color.BLACK, String.format("Tmp. carga  %5.1fs", tmp_carrega/1000), f1);
+    
         gd.drawLine(-0.5, 0, 12, 0, Color.BLACK, 1);
         gd.drawString(9.3, -5, Color.BLACK, "Num. Elem", f1);
         // dibuixar els punts i les linies            
