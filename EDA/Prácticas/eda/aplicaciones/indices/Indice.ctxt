@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=lib\ lin
+comment0.target=Indice(java.lang.String,\ int)
+comment0.text=\n\ Construye\ un\ objeto\ Indice\ a\ partir\ del\ nombre\ del\ libro\ (lib)\n\ y\ del\ numero\ de\ pagina\ (lin).\n\ @param\ \ lib\ \ \ nombre\ del\ libro\n\ @param\ \ lin\ \ \ n\u00FAmero\ de\ linea\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ Devuelve\ la\ informaci\u00F3n\ textual\ asociada\ a\ un\ Indice\n\ @return\ \ String\ con\ el\ nombre\ del\ libro\ y\ el\ n\u00FAmero\ de\ l\u00EDneas.\n
+numComments=2

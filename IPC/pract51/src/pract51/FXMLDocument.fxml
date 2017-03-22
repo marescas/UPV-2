@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pract51.FXMLDocumentController">
+   <top>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu text="_Archivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#salirpulsado" text="Salir" />
+                  </items>
+                </Menu>
+                <Menu fx:id="btnlanzar" onAction="#lanzarPulsado" text="_Lanzar" />
+                <Menu text="_Opciones">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Comprar en">
+                           <items>
+                              <CheckMenuItem fx:id="amazonbtn" mnemonicParsing="false" onAction="#amazonpulsado" text="Amazon" />
+                              <CheckMenuItem fx:id="ebaybtn" mnemonicParsing="false" onAction="#ebaypulsado" text="Ebay" />
+                           </items>
+                        </Menu>
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar fx:id="toolbar" prefHeight="40.0" prefWidth="200.0">
+               <items>
+                  <Button mnemonicParsing="false" onAction="#amazonComprar">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ImagenesP5/amazon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#bloggerPulsado">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ImagenesP5/blogger.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#ebaybtnok">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ImagenesP5/ebay.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#facebookbtnok">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ImagenesP5/facebook.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#plusbtnOk">
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ImagenesP5/googlePlus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <Label fx:id="texto" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

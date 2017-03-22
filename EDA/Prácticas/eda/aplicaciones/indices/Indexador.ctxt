@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=listaLibros\ dir\ numCub
+comment0.target=Indexador(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\ Construye\ un\ indexador\ a\ partir\ de\ los\ documentos\ cuyos\ nombres\ se\ encuentran\n\ \ en\ listaLibros.\n\ \ @param\ \ \ String\ listaLibros,\ nombre\ del\ fichero\ que\ contiene\ la\ lista\ de\ documentos\n\ \ @param\ \ \ String\ dir,\ nombre\ del\ directorio\ donde\ se\ encuentras\ los\ documentos\n\ \ @throws\ \ FileNotFoundException\ si\ no\ se\ encuentra\ algun\ fichero\ \n
+comment1.params=nombreLibro\ dir
+comment1.target=boolean\ cargarLibro(java.lang.String,\ java.lang.String)
+comment1.text=\ Actualiza\ el\ Indexador\ con\ los\ datos\ del\ documento\ nombreLibro\ que\n\ \ se\ encuentra\ en\ el\ directorio\ dir.\ Si\ no\ existe\ el\ documento,\ no\ hace\ nada.\n\ \ @param\ \ \ String\ nombreLibro,\ nombre\ del\ fichero\ que\ contiene\ el\ documento\n\ \ @param\ \ \ String\ dir,\ nombre\ del\ directorio\ donde\ se\ encuentra\ el\ documento\n\ \ @return\ \ boolean,\ true\ si\ el\ libro\ se\ ha\ leido\ con\ exito\ y\ falso\ en\ caso\ contrario\n
+comment2.params=pal
+comment2.target=librerias.estructurasDeDatos.modelos.ListaConPI\ buscarPalabra(java.lang.String)
+comment2.text=\n\ Devuelve\ una\ ListaConPI\ con\ la\ representaci\u00F3n\ textual\n\ del\ libro\ y\ pagina\ (Indice)\ en\ los\ que\ aparece\ el\ termino\n\ @param\ \ \ String\ a\ buscar\n\ @return\ ListaConPI<String>\n
+comment3.params=vect
+comment3.target=int\ getMax(int[])
+comment3.text=\n\ Devuelve\ el\ valor\ maximo\ de\ un\ array\n\ @param\ int\ []\ \n\ @return\ int,\ valor\ maximo\n
+comment4.params=
+comment4.target=void\ statistics()
+comment4.text=\n\ Genera\ un\ grafico\ con\ el\ histograma,\ factor\ de\ carga,\ desv.\ tipica\ y\ tiempo\ de\ carga\n
+numComments=5

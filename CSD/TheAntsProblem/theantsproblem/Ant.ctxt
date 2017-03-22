@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=id0\ x0\ y0\ t\ stepsAnt\ barrier
+comment0.target=Ant(int,\ int,\ int,\ Territory,\ int,\ java.util.concurrent.CyclicBarrier)
+comment1.params=
+comment1.target=int\ getid()
+comment10.params=ms
+comment10.target=void\ delay(long)
+comment11.params=
+comment11.target=void\ run()
+comment2.params=x\ y
+comment2.target=void\ setPosition(int,\ int)
+comment3.params=
+comment3.target=int\ getX()
+comment4.params=
+comment4.target=int\ getY()
+comment5.params=x
+comment5.target=void\ setX(int)
+comment6.params=y
+comment6.target=void\ setY(int)
+comment7.params=
+comment7.target=int\ getNextPosX()
+comment8.params=
+comment8.target=int\ getNextPosY()
+comment9.params=
+comment9.target=void\ nextMovement()
+numComments=12
