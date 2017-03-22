@@ -6,6 +6,8 @@
 package pract51;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import static javafx.application.Platform.exit;
@@ -16,6 +18,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.ChoiceDialog;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.TextInputDialog;
@@ -93,10 +96,23 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void bloggerPulsado(ActionEvent event) {
-    }
+            List<String> choices = new ArrayList<>();
+            choices.add("El blog de Athos");
+            choices.add("El blog de Phortos");
+            choices.add("El blog de Aramis");
+            ChoiceDialog<String> dialog = new ChoiceDialog<>("El blog de Athos", choices);
+            dialog.setTitle("Selecciona un blog");
+            dialog.setHeaderText("¿Qué blog quieres leer?");
+            dialog.setContentText("Elige: ");
+            Optional<String> result = dialog.showAndWait();
+            texto.setText("Estas leyendo "+result.get());
+       }
 
     @FXML
     private void ebaybtnok(ActionEvent event) {
+        if(ebaybtn.isSelected()){
+        
+        }
     }
 
     @FXML
