@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayCola()
+comment1.params=x
+comment1.target=void\ encolar(java.lang.Object)
+comment1.text=inserta\ x\ al\ final\ de\ la\ Cola
+comment2.params=
+comment2.target=java.lang.Object\ desencolar()
+comment2.text=SII\ \!esVacia()\:\ elimina\ el\ primer\ dato\ de\ la\ Cola
+comment3.params=
+comment3.target=java.lang.Object\ primero()
+comment3.text=SII\ \!esVacia()\:\ devuelve\ el\ primer\ dato\ de\ la\ Cola
+comment4.params=
+comment4.target=boolean\ esVacia()
+comment4.text=comprueba\ si\ la\ Cola\ esta\ o\ no\ vacia
+comment5.params=indice
+comment5.target=int\ incrementa(int)
+comment5.text=incrementa\ la\ posicion\ de\ forma\ circular
+comment6.params=
+comment6.target=void\ duplicarCola()
+comment6.text=\ \n\ duplica\ la\ capacidad\ del\ array\n
+numComments=7

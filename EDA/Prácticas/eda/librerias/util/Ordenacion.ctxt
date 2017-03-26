@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.params=a
+comment0.target=void\ quickSort(java.lang.Comparable[])
+comment0.text=\ \n\ \ Algoritmo\ de\ ordenacion\ quicksort\ (Hoare,\ 1963).\ \n\ \ Utiliza\ el\ algoritmo\ de\ particion\ debido\ a\ Weiss,\ \n\ \ con\ mediana\ de\ 3\ para\ el\ calculo\ del\ pivote.\n\ \ \n\ \ @param\ a\ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n
+comment1.params=a\ izq\ der
+comment1.target=void\ quickSort(java.lang.Comparable[],\ int,\ int)
+comment10.params=a\ b
+comment10.target=boolean\ sonIguales(java.lang.Comparable[],\ java.lang.Comparable[])
+comment10.text=\ \n\ \ Comprueba\ si\ los\ arrays\ a\ y\ b\ son\ iguales\ elemento\ a\ elemento.\n\ \ \n\ \ @param\ a\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ \ @return\ boolean,\ el\ resultado\ de\ la\ comprobacion\n
+comment2.params=a\ ind1\ ind2
+comment2.target=void\ intercambiar(java.lang.Object[],\ int,\ int)
+comment3.params=a\ izq\ der
+comment3.target=java.lang.Comparable\ mediana3(java.lang.Comparable[],\ int,\ int)
+comment4.params=v
+comment4.target=void\ mergeSort1(java.lang.Comparable[])
+comment4.text=\n\ Ordena\ ascendentemente\ el\ array\ v.\n\ \n\ @param\ v\ \ Sus\ elementos\ deben\ implementar\ la\ interfaz\ Comparable\n
+comment5.params=v\ i\ f
+comment5.target=void\ mergeSort1(java.lang.Comparable[],\ int,\ int)
+comment5.text=\n\ SII\ i<\=f\:\ ordena\ ascendentemente\ el\ subarray\ v[i,\ f].\n\ \n\ @param\ v\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ @param\ i\ \ Extremo\ inferior\ del\ intervalo\ a\ ordenar\n\ @param\ f\ \ Extremo\ superior\ del\ intervalo\ a\ ordenar\n
+comment6.params=v\ i\ f\ m
+comment6.target=void\ merge1(java.lang.Comparable[],\ int,\ int,\ int)
+comment6.text=\n\ Mezcla\ internamente\ los\ subarrays\ v[i,\ m]\ y\ v[m\ +\ 1,\ f],\ \n\ ambos\ ordenados\ Asc.\n\ \n\ @param\ v\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ @param\ i\ \ Extremo\ inferior\ del\ intervalo\ a\ mezclar\n\ @param\ f\ \ Extremo\ superior\ del\ intervalo\ a\ mezclar\n
+comment7.params=v
+comment7.target=void\ mergeSort2(java.lang.Comparable[])
+comment7.text=\n\ Ordena\ ascendentemente\ el\ array\ v.\n\ \n\ @param\ v\ \ Sus\ elementos\ deben\ implementar\ la\ interfaz\ Comparable\n
+comment8.params=v\ i\ f
+comment8.target=java.lang.Comparable[]\ mergeSort2(java.lang.Comparable[],\ int,\ int)
+comment8.text=\n\ SII\ i<\=f\:\ devuelve\ un\ array\ con\ los\ elementos\ del\ subarray\ \n\ v[i,\ f]\ ordenados\ Asc.\ \n\ \n\ @param\ v\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ @param\ i\ \ Extremo\ inferior\ del\ intervalo\ a\ ordenar\n\ @param\ f\ \ Extremo\ superior\ del\ intervalo\ a\ ordenar\n\ @return\ T[],\ el\ array\ resultante\ de\ ordenacion\ de\ v[i,\ f]\n
+comment9.params=v1\ v2
+comment9.target=java.lang.Comparable[]\ merge2(java.lang.Comparable[],\ java.lang.Comparable[])
+comment9.text=\n\ Devuelve\ el\ array\ mezcla\ de\ v1\ y\ v2,\ dos\ arrays\ ordenados\ Asc.\n\ \n\ @param\ v1\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ @param\ v2\ \ Sus\ elementos\ implementan\ la\ interfaz\ Comparable\n\ @return\ T[],\ el\ array\ resultante\ de\ la\ fusion\ de\ v1\ y\ v2\n
+numComments=11
