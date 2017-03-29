@@ -5,6 +5,7 @@ package librerias.estructurasDeDatos.jerarquicos;
 import librerias.estructurasDeDatos.modelos.Cola;
 import librerias.estructurasDeDatos.lineales.ArrayCola;
 import librerias.util.Ordenacion;
+import java.util.Arrays;
 
 /** Clase ABB<E> que representa un Arbol Binario mediante un enlace 
  * a su actual raiz. Sus caracteristicas son las siguientes: 
@@ -32,7 +33,8 @@ public class ABB<E extends Comparable<E>> {
      * @param v Array con los elementos a insertar en el ABB
      */
     public ABB(E[] v) {
-        Ordenacion.mergeSort1(v);
+        //Ordenacion.mergeSort1(v);
+        Arrays.sort(v);
         raiz = construirEquilibrado(v, 0, v.length-1);
         // COMPLETAR
         
@@ -47,13 +49,16 @@ public class ABB<E extends Comparable<E>> {
      */
     protected NodoABB<E> construirEquilibrado(E[] v, int ini, int fin) {
         if(ini<fin){
-        int mitad = (ini+fin)/2;
-        NodoABB<E> nodo = new NodoABB<E>(v[mitad]);
-        nodo.izq = construirEquilibrado(v, ini, mitad-1);
-        nodo.der = construirEquilibrado(v, mitad+1, fin);
-        return nodo;
-        }else{
-        return null;
+            int mitad = (ini+fin)/2;
+            NodoABB<E> nodo = new NodoABB<E>(v[mitad],
+            construirEquilibrado(v, ini, mitad-1),
+            construirEquilibrado(v, mitad+1, fin));  
+      
+            return nodo;
+        }else if (ini == fin){ return new NodoABB(v[ini]);}
+        else{
+        return  null;
+   
         }
        
         
