@@ -51,7 +51,7 @@ public class EditorPredictivo extends ABB<String> {
             }
             fPalabras.close();
             //completar
-            raiz= super.construirEquilibrado(palabras,0,palabras.length);
+            raiz= construirEquilibrado(palabras,0,talla-1);
             
         } catch (FileNotFoundException eChecked) {
             System.out.println("El fichero " + nombreFichero 
