@@ -12,8 +12,10 @@ Prácticas en el repositorio:
   * P2
   * P3
   * P4
+  * P5
 * IPC (Ejercicios desordenados, mirar guión de la práctica)
   * P1
   * P2
   * P3
+  * P7
   
