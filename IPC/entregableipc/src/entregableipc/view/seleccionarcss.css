@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.boton_verde {
+-fx-background-color: #38ff1f;
+-fx-border: 12px solid;
+-fx-border-color: black;
+}
+.boton_encima {
+-fx-background-color: green;
+-fx-border: 12px solid;
+-fx-border-color: black;
+}
+.boton_ocupado{
+-fx-background-color: #ff0000;
+-fx-border: 12px solid;
+-fx-border-color: black;
+    
+}
+.boton_clicked{
+-fx-background-color: #ff9900;
+-fx-border: 12px solid;
+-fx-border-color: black;
+}

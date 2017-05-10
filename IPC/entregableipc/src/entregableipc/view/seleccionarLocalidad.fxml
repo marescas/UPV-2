@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox fx:id="vbox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="15.0" styleClass="mainFxmlClass" stylesheets="@seleccionarcss.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entregableipc.controller.SeleccionarLocalidadController">
+   <children>
+      <VBox alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+         <children>
+            <HBox spacing="15.0">
+               <children>
+                  <Circle fill="#38ff1f" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Libre" />
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Circle fill="RED" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Ocupada" />
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <Circle fill="#ff9900" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Seleccionada" />
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

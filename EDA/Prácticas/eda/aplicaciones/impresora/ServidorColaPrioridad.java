@@ -2,6 +2,7 @@ package aplicaciones.impresora;
 
 import librerias.estructurasDeDatos.modelos.ColaPrioridad;
 import librerias.estructurasDeDatos.jerarquicos.MonticuloBinarioR0;
+import librerias.estructurasDeDatos.jerarquicos.MonticuloBinario;
 
 
 /** Clase ServidorColaPrioridad: implementa un ServidorDeImpresion
@@ -30,6 +31,7 @@ public class ServidorColaPrioridad implements ServidorDeImpresion {
     public void insertar(Trabajo t) { 
         /*COMPLETAR*/
         cP.insertar(t);
+        
     }
     
     /** Comprueba si hay algun trabajo en espera en un ServidorDeImpresion.
@@ -46,7 +48,7 @@ public class ServidorColaPrioridad implements ServidorDeImpresion {
      */
     public Trabajo getTrabajo() { 
         /*COMPLETAR*/
-        return cP.eliminarMin();
+        return cP.recuperarMin();
     }
     
     /** SII hayTrabajos(): elimina de un ServidorDeImpresion el 
@@ -56,9 +58,12 @@ public class ServidorColaPrioridad implements ServidorDeImpresion {
      */
     public int imprimirTrabajo() { 
         /*COMPLETAR*/
+      
         Trabajo t = cP.eliminarMin();
         int tiempoImpresion = 60 * t.getNumPaginas() / PAGINAS_POR_MINUTO;
+        
         return tiempoImpresion;
+ 
    
     }
 }
