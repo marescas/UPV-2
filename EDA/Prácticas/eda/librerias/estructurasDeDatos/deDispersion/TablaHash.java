@@ -217,4 +217,5 @@ public class TablaHash<C, V> implements Map<C, V> {
         for(int i = 0; i<contadores.length; i++) s+= i+"\t"+contadores[i]+"\n";
         return s;
     }
+    
 }

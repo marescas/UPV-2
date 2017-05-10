@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=t\ n\ e
+comment0.target=Trabajo(java.lang.String,\ int,\ int)
+comment0.text=\ Crea\ un\ Trabajo\ de\ titulo\ t,\ numero\ de\ paginas\ n\n\ \ y\ enviado\ a\ imprimir\ en\ el\ intante\ de\ envio\ e.\n\ \ @param\ t\ \ \ \ String\n\ \ @param\ n\ \ \ \ int\n\ \ @param\ e\ \ \ \ int\ (seg.)\n
+comment1.params=
+comment1.target=java.lang.String\ getTitulo()
+comment1.text=\ Devuelve\ el\ titulo\ de\ un\ Trabajo.\n\ \ @return\ String\n
+comment2.params=
+comment2.target=int\ getNumPaginas()
+comment2.text=\ Devuelve\ el\ numero\ de\ paginas\ de\ un\ Trabajo.\n\ \ @return\ int\n
+comment3.params=
+comment3.target=int\ getEnvio()
+comment3.text=\ Devuelve\ el\ instante\ de\ envio\ a\ impresion\ de\ un\ Trabajo.\n\ \ @return\ int\ (seg.)\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\ Devuelve\ el\ String\ que\ representa\ un\ Trabajo\ en\ un\ cierto\ \n\ \ formato\ texto.\n\ \ @return\ String\n
+comment5.params=t
+comment5.target=int\ compareTo(Trabajo)
+numComments=6

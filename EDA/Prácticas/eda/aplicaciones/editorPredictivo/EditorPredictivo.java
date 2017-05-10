@@ -51,7 +51,7 @@ public class EditorPredictivo extends ABB<String> {
             }
             fPalabras.close();
             //completar
-            raiz= construirEquilibrado(palabras,0,talla-1);
+            raiz= construirEquilibrado(palabras,0,palabras.length-1);
             
         } catch (FileNotFoundException eChecked) {
             System.out.println("El fichero " + nombreFichero 
@@ -105,13 +105,14 @@ public class EditorPredictivo extends ABB<String> {
      */
     public ListaConPI<String> recuperarSucesores(String prefijo, int n) {
         ListaConPI<String> lista = new LEGListaConPI<>();
+        boolean salir = false;
         String aux = recuperar(prefijo);
         if(aux != null){
             lista.insertar(aux);
             n--;
         }
-        while(n > 0){
-            aux = sucesor(prefijo);
+        while(n > 0 && !salir){
+            aux = sucesor(aux);
             //startsWith --> True si empieza por el prefijo
             if(aux!= null){
                 if(aux.startsWith(prefijo)){
@@ -119,6 +120,7 @@ public class EditorPredictivo extends ABB<String> {
                     n--;
                 }else{
                     //En el caso de que no sea prefijo me salgo
+                    salir = true;
                     break;
                 }
             }
