@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=numVertices
+comment0.target=GrafoDirigido(int)
+comment0.text=\ Construye\ un\ grafo\ Dirigido\ vacio\ con\ numVertices.\ \n\ \ @param\ numVertices\ \ Numero\ de\ vertices\ del\ grafo\ vacio\n
+comment1.params=
+comment1.target=int\ numVertices()
+comment1.text=Devuelve\ el\ numero\ de\ vertices\ de\ un\ grafo.\ \n\ @return\ \ int\ Numero\ de\ vertices\ de\ un\ grafo\n
+comment2.params=
+comment2.target=int\ numAristas()
+comment2.text=Devuelve\ el\ numero\ de\ aristas\ del\ grafo\n\ @return\ \ \ \ \ Numero\ de\ aristas\ del\ grafo\n
+comment3.params=i\ j
+comment3.target=boolean\ existeArista(int,\ int)
+comment3.text=\ Comprueba\ si\ la\ arista\ (i,j)\ esta\ en\ un\ grafo.\n\ @param\ i\ \ \ \ Vertice\ origen\n\ @param\ j\ \ \ \ Vertice\ destino\n\ @return\ boolean\ true\ si\ (i,j)\ esta\ y\ false\ en\ caso\ contrario\n
+comment4.params=i\ j
+comment4.target=double\ pesoArista(int,\ int)
+comment4.text=\ Devuelve\ el\ peso\ de\ la\ arista\ (i,j)\ de\ un\ grafo,\ 0\ si\ dicha\ arista\ \n\ no\ esta\ en\ el\ grafo.\n\ @return\ double\ Peso\ de\ la\ arista\ (i,j),\ 0\ si\ no\ existe.\n
+comment5.params=i\ j
+comment5.target=void\ insertarArista(int,\ int)
+comment5.text=\ Si\ no\ esta,\ inserta\ la\ arista\ (i,\ j)\ en\ un\ grafo\ no\ Ponderado\ \n\ (al\ principio\ de\ la\ Lista\ de\ adyacentes\ a\ i).\n\ @param\ i\ \ \ \ Vertice\ origen\n\ @param\ j\ \ \ \ Vertice\ destino\n
+comment6.params=i\ j\ p
+comment6.target=void\ insertarArista(int,\ int,\ double)
+comment6.text=\ Si\ no\ esta,\ inserta\ la\ arista\ (i,\ j)\ de\ peso\ p\ en\ un\ grafo\ Ponderado\ \n\ (al\ principio\ de\ la\ Lista\ de\ adyacentes\ a\ i).\n\ @param\ i\ \ \ \ Vertice\ origen\n\ @param\ j\ \ \ \ Vertice\ destino\n\ @param\ p\ \ \ \ Peso\ de\ (i,\ j)\n
+comment7.params=i
+comment7.target=librerias.estructurasDeDatos.modelos.ListaConPI\ adyacentesDe(int)
+comment7.text=\ Devuelve\ una\ Lista\ Con\ PI\ que\ contiene\ los\ adyacentes\ al\ vertice\ i.\n\ @param\ i\ Vertice\ del\ que\ se\ obtienen\ los\ adyacentes\n\ @return\ ListaConPI\ con\ los\ vertices\ adyacentes\ a\ i\n
+numComments=8

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=codAdy\ pesoArista
+comment0.target=Adyacente(int,\ double)
+comment0.text=\ Construye\ el\ vertice\ adyacente\ a\ otro\ de\ un\ grafo\ y\ el\ peso\ \n\ de\ la\ arista\ que\ los\ une.\n\ @param\ \ codigo\ del\ vertice\ adyacente\ a\ otro\n\ @param\ \ peso\ de\ la\ arista\ que\ une\ este\ vertice\ y\ su\ adyacente\ \n
+comment1.params=
+comment1.target=int\ getDestino()
+comment1.text=Devuelve\ el\ vertice\ adyacente
+comment2.params=
+comment2.target=double\ getPeso()
+comment2.text=Devuelve\ el\ peso\ del\ arco\ al\ vertice\ adyacente
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=Devuelve\ un\ String\ que\ representa\ a\ un\ vertice\ adyacente\ a\ otro\ \ \n\ y\ al\ peso\ de\ la\ arista\ que\ los\ une.\n\ @return\ \ String\ \ que\ representa\ a\ un\ adyacente\n
+numComments=4

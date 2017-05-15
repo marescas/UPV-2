@@ -168,7 +168,7 @@ public class ChatServer extends UnicastRemoteObject
 						    conf.getNameServicePort());
 					
 	 reg.rebind (conf.getServerName(), this);
-      } catch (java.rmi.z e) {
+      } catch (java.rmi.ServerException e) {
 	 System.out.println ("rmiregistry not found at '" + 
 			     conf.getNameServiceHost() + ":" + conf.getNameServicePort() + "'");
 	 System.exit(-1);
