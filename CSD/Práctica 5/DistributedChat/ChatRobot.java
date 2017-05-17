@@ -49,7 +49,7 @@ public class ChatRobot
       }
 
       // Once we've got the server, we create a local user object and register it into the server
-      myUser = new ChatUser ("Robot", this);
+      myUser = new ChatUser (nick, this);
       boolean done = srv.connectUser (myUser);
       if (!done) throw new Exception ("Nick already in use");
 
@@ -155,7 +155,7 @@ public class ChatRobot
           ui.showUserLeavesChannel (c_dst.getName(), nick);
            } else if (str.startsWith (ChatChannel.JOIN)) {
           nick = str.substring (ChatChannel.JOIN.length() + 1);
-          doSendChannelMessage("#Friends", "Hola"+ nick);
+          doSendChannelMessage("#Friends", "Hola "+ nick);
           ui.showUserEntersChannel (c_dst.getName(), nick);
            }
         } else { // Normal channel message
@@ -174,10 +174,11 @@ public class ChatRobot
       ChatRobot cc = new ChatRobot (ChatConfiguration.parse (args));
      
       try{
-          cc.doConnect("TestServer", "");
+          cc.doConnect("TestServer", "Robot");
           cc.doJoinChannel("#Friends");
       }catch(Exception e){
         System.out.println("Error"+ e.getMessage());
         }
    
-}}
+    }
+}

@@ -99,9 +99,12 @@ public abstract class Grafo {
         // COMPLETAR
         int talla = numVertices();
         distanciaMin = new double[talla];
+        for(int i  = 0; i < talla; i++)distanciaMin[i] = INFINITO;
         caminoMin = new int[talla];
+        for(int  i= 0; i<talla; i++)distanciaMin[i] = -1;
         visitados = new int[talla];
         ColaPrioridad<ParVC> cp = new PriorityQColaPrioridad<ParVC>();
+        cp.insertar(new ParVC(origen,0));
         while(!cp.esVacia()){
             int v = cp.eliminarMin().getV();
             if(visitados[v]==0){
@@ -143,6 +146,7 @@ public abstract class Grafo {
     public ListaConPI<Integer> caminoMinimo(int origen, int destino) {      
         ListaConPI<Integer> res = new LEGListaConPI<Integer>();
         // COMPLETAR
+        for (int i = destino; i!=origen;i=caminoMin[i])res.insertar(caminoMin[i]);
         return res;
         
     }   
