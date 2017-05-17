@@ -20,5 +20,5 @@ Prácticas en el repositorio:
   * P3
   * P7
   * P8
-  * Entregable 1
+  * Entregable 1 realizado con  @Ermarsa
   
