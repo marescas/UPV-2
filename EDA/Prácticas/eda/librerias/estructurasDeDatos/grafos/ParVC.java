@@ -22,8 +22,6 @@ public class ParVC implements Comparable<ParVC>
         return coste;
     }
     public int compareTo(ParVC e){
-        if(coste > e.getCoste())return 1;
-        else if(e.getCoste()<coste)return -1;
-        else return 0;
+        return (int)(coste - e.getCoste());
     }
 }

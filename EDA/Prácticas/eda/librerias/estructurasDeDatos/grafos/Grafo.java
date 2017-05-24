@@ -5,6 +5,8 @@ import librerias.estructurasDeDatos.lineales.LEGListaConPI;
 import librerias.estructurasDeDatos.modelos.ColaPrioridad;
 import librerias.estructurasDeDatos.jerarquicos.PriorityQColaPrioridad;
 
+import java.util.Arrays;
+
 /** Clase abstracta Grafo: Base de la jerarquia Grafo, que define el 
  *  comportamiento de un grafo.<br> 
  *  No es una interfaz porque incluye el codigo de las operaciones de un 
@@ -99,12 +101,15 @@ public abstract class Grafo {
         // COMPLETAR
         int talla = numVertices();
         distanciaMin = new double[talla];
-        for(int i  = 0; i < talla; i++)distanciaMin[i] = INFINITO;
         caminoMin = new int[talla];
-        for(int  i= 0; i<talla; i++)distanciaMin[i] = -1;
         visitados = new int[talla];
+        //fill pone en cada posicion del array el objeto indicado
+        Arrays.fill(visitados, 0);
+        Arrays.fill(distanciaMin, INFINITO);
+        Arrays.fill(caminoMin, -1);
         ColaPrioridad<ParVC> cp = new PriorityQColaPrioridad<ParVC>();
         cp.insertar(new ParVC(origen,0));
+        distanciaMin[origen] = 0;
         while(!cp.esVacia()){
             int v = cp.eliminarMin().getV();
             if(visitados[v]==0){
@@ -113,12 +118,14 @@ public abstract class Grafo {
                 lista.inicio();
                 while(!lista.esFin()){
                     Adyacente w = lista.recuperar();
+                    //w.getDestino()--> devuelve el vertice del nodo
                     if(distanciaMin[w.getDestino()]>distanciaMin[v]+w.getPeso()){
                         distanciaMin[w.getDestino()] =distanciaMin[v]+w.getPeso();
                         caminoMin[w.getDestino()] =v;
                         cp.insertar(new ParVC(w.getDestino(),distanciaMin[w.getDestino()]));
                     
                     }
+                    lista.siguiente();
                 }
             }
         
@@ -146,7 +153,16 @@ public abstract class Grafo {
     public ListaConPI<Integer> caminoMinimo(int origen, int destino) {      
         ListaConPI<Integer> res = new LEGListaConPI<Integer>();
         // COMPLETAR
-        for (int i = destino; i!=origen;i=caminoMin[i])res.insertar(caminoMin[i]);
+        if (origen == destino)return res;
+        dijkstra(origen);
+        
+        for (int i = destino; i!=origen;i=caminoMin[i]){
+            if (i == -1) return new LEGListaConPI<Integer>();
+            res.insertar(i);
+            //lo invierto porque empiezo en el final y voy buscando por cual vengo
+            res.inicio();
+        }
+        res.insertar(origen);
         return res;
         
     }   
