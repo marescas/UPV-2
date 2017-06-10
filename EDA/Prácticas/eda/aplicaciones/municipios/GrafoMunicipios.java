@@ -105,7 +105,8 @@ public class GrafoMunicipios {
      * Devuelve -1 si no existe un vertice con dicho municipio
      */
     public int obtenerCodigo(Municipio m) {
-        //COMPLETAR       
+        //COMPLETAR   
+        if (muni2Ver.recuperar(m)==null)return -1;
         return muni2Ver.recuperar(m);
         
         
