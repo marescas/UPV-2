@@ -1,5 +1,5 @@
-# UPV
-Prácticas realizadas en la Universidad Politécnica de Valencia.
+# UPV 2
+Prácticas realizadas en 2ºETSINF en la Universidad Politécnica de Valencia.
 
 Prácticas en el repositorio:
 
@@ -14,6 +14,7 @@ Prácticas en el repositorio:
   * P3
   * P4
   * P5
+  * P6
 * IPC (Ejercicios desordenados, mirar guión de la práctica)
   * P1
   * P2
@@ -21,4 +22,5 @@ Prácticas en el repositorio:
   * P7
   * P8
   * Entregable 1 realizado con  @Ermarsa
+  * Entregable 2 realizado con @Ermarsa
   
